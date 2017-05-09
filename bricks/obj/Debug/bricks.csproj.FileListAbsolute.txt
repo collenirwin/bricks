@@ -1,0 +1,9 @@
+E:\School2017.1\Prog\bricks\bricks\bin\Debug\bricks.exe.config
+E:\School2017.1\Prog\bricks\bricks\bin\Debug\bricks.exe
+E:\School2017.1\Prog\bricks\bricks\bin\Debug\bricks.pdb
+E:\School2017.1\Prog\bricks\bricks\obj\Debug\bricks.csprojResolveAssemblyReference.cache
+E:\School2017.1\Prog\bricks\bricks\obj\Debug\bricks.Form1.resources
+E:\School2017.1\Prog\bricks\bricks\obj\Debug\bricks.Properties.Resources.resources
+E:\School2017.1\Prog\bricks\bricks\obj\Debug\bricks.csproj.GenerateResource.Cache
+E:\School2017.1\Prog\bricks\bricks\obj\Debug\bricks.exe
+E:\School2017.1\Prog\bricks\bricks\obj\Debug\bricks.pdb
