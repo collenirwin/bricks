@@ -42,6 +42,10 @@ namespace bricks {
         public void reset() {
             tmrMain.Stop();
 
+            // make sure we're focused on the form itself
+            Focus();
+            Select();
+
             score = 0;
             time  = 0;
             start = DateTime.Now;
@@ -52,6 +56,8 @@ namespace bricks {
             foreach (Control control in background.Controls) {
                 control.Dispose();
             }
+
+            background.Controls.Clear();
 
             paddle = new Paddle(this, PADDLE_SPEED);
             background.Controls.Add(paddle);
@@ -85,7 +91,7 @@ namespace bricks {
         }
 
         private void tmrMain_Tick(object sender, EventArgs e) {
-            background.Invalidate();
+            background.Refresh();
 
             // get # of seconds since start of the game
             time = (DateTime.Now - start).TotalSeconds;
@@ -107,6 +113,8 @@ namespace bricks {
             }
 
             if (gameFinished()) {
+                tmrMain.Stop();
+
                 MessageBox.Show(string.Format(
                     "You won!\nTotal Time: {0}\nScore: {1}", 
                     time.ToString("n2"), 
